@@ -30,4 +30,14 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene("GameScene");
     }
+
+    public void LoadCutScene()
+    {
+        SceneManager.LoadScene("CutScene");
+    }
+
+    public string GetCurrentScene()
+    {
+        return SceneManager.GetActiveScene().name;
+    }
 }
