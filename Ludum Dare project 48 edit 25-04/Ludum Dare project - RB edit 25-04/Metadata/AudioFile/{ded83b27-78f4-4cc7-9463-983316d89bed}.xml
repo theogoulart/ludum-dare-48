@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{ded83b27-78f4-4cc7-9463-983316d89bed}">
+		<property name="assetPath">
+			<value>Music/Transition to Menu v3 - Trimmed.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.5584353741496599</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{57e360c1-91e9-4342-80bf-ec1474b95eb0}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{72ff6fc2-8a27-4a81-a9ce-179cd4c1478c}">
+		<property name="assetPath">
+			<value>sfx/sfx_ui_contagempontuacao.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>5.0336458333333329</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{57e360c1-91e9-4342-80bf-ec1474b95eb0}</destination>
+		</relationship>
+	</object>
+</objects>

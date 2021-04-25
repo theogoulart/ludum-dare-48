@@ -34,4 +34,9 @@ public class EnemySpawner : MonoBehaviour
         yield return new WaitForSecondsRealtime(Random.Range(timeRangeToSpawn.x, timeRangeToSpawn.y));
         canSpawn = true;
     }
+
+    public void SetCanSpawn(bool value)
+    {
+        canSpawn = value;
+    }
 }

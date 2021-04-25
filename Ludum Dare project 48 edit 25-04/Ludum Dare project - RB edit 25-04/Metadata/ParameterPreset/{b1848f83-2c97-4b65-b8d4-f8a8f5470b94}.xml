@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{b1848f83-2c97-4b65-b8d4-f8a8f5470b94}">
+		<property name="name">
+			<value>contagem</value>
+		</property>
+		<relationship name="folder">
+			<destination>{0e19ace3-fdb4-4d50-af85-c46e8bfafdc9}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{561403c4-645a-4138-ac2e-ee8cd700a903}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{561403c4-645a-4138-ac2e-ee8cd700a903}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="minimum">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>3</value>
+		</property>
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+	</object>
+</objects>
