@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private static GameManager instance;
+    public static GameManager instance;
     private bool isAlive = true;
+    private bool inGame = false;
 
     private void Awake()
     {
@@ -23,6 +24,16 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        CheckInputs();
+
+        if(inGame && Input.GetKeyDown(KeyCode.Escape))
+        {
+            GameOver();
+        }
+    }
+
+    private void CheckInputs()
+    {
         if (Input.GetKey(KeyCode.Space))
         {
             string currentScene = SceneLoader.instance.GetCurrentScene();
@@ -30,12 +41,12 @@ public class GameManager : MonoBehaviour
             {
                 SceneLoader.instance.LoadCutScene();
             }
-            else if(currentScene == "CutScene")
+            else if (currentScene == "CutScene")
             {
                 SceneLoader.instance.LoadGameScene();
                 StartCoroutine(SetupGameScene());
             }
-            else if(currentScene == "GameScene")
+            else if (currentScene == "GameScene")
             {
                 if (!isAlive)
                 {
@@ -61,6 +72,7 @@ public class GameManager : MonoBehaviour
             mover.SetCanMove(true);
         }
         ScoreHandler.instance.StartCount();
+        inGame = true;
     }
 
     private void SetupMainMenu()
@@ -68,9 +80,13 @@ public class GameManager : MonoBehaviour
 
     }
 
-    private void GameOver()
+    public void GameOver()
     {
         isAlive = false;
+        inGame = false;
         ScoreHandler.instance.StopCount();
+
+
+        SceneLoader.instance.LoadMainMenu();
     }
 }

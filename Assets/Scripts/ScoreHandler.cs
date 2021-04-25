@@ -5,6 +5,7 @@ using UnityEngine;
 public class ScoreHandler : MonoBehaviour
 {
     public static ScoreHandler instance;
+    public const string RECORD_KEY = "RECORD";
     private bool inGame = false;
     [SerializeField] private int currentPoints = 0;
     [SerializeField] private float startTime = 0;
@@ -27,14 +28,13 @@ public class ScoreHandler : MonoBehaviour
     {
         if (inGame)
         {
-
             currentPoints = (int)(Time.realtimeSinceStartup - startTime);
         }
     }
 
     public void SaveRecord(int newRecord)
     {
-        PlayerPrefs.SetInt("RECORD", newRecord);
+        PlayerPrefs.SetInt(RECORD_KEY, newRecord);
     }
 
     public int GetCurrentRecord()
