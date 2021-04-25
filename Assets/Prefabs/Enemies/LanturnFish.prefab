@@ -8,7 +8,6 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD
   - component: {fileID: 4554764889669347486}
   - component: {fileID: 411064109819052601}
   - component: {fileID: 6106262631996846803}
@@ -17,13 +16,6 @@ GameObject:
   m_Layer: 0
   m_Name: LanturnFish
   m_TagString: Enemy
-=======
-  - component: {fileID: 5201073774267622959}
-  - component: {fileID: 5201073774267622952}
-  m_Layer: 0
-  m_Name: Point Light 2D
-  m_TagString: Untagged
->>>>>>> a84f442fdf9eae3fadc5128a3991926d01076a70
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -187,17 +179,12 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
-<<<<<<< HEAD
 --- !u!114 &-3697075621843050474
-=======
---- !u!114 &5201073775486318621
->>>>>>> a84f442fdf9eae3fadc5128a3991926d01076a70
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 3537611063877429185}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -227,34 +214,3 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
-=======
-  m_GameObject: {fileID: 5312386910695216485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_ApplyToSortingLayers: 00000000
-  m_ShapePath:
-  - {x: -0.4899928, y: -0.059333086, z: 0}
-  - {x: -0.5024193, y: -0.15558648, z: 0}
-  - {x: -0.45238316, y: -0.19227958, z: 0}
-  - {x: -0.3256251, y: -0.21562982, z: 0}
-  - {x: -0.24556738, y: -0.40576673, z: 0}
-  - {x: 0.22313374, y: -0.32285643, z: 0}
-  - {x: 0.11638999, y: 0.0092971325, z: 0}
-  - {x: -0.03633237, y: 0.22612011, z: 0}
-  - {x: -0.1321522, y: 0.10793698, z: 0}
-  - {x: -0.15883818, y: 0.0045289993, z: 0}
-  - {x: -0.20553851, y: -0.022156954, z: 0}
-  - {x: -0.25891033, y: 0.034550667, z: 0}
-  - {x: -0.4256973, y: 0.031214952, z: 0}
-  m_ShapePathHash: -1620488993
-  m_Mesh: {fileID: 0}
-  m_InstanceId: 18834
->>>>>>> a84f442fdf9eae3fadc5128a3991926d01076a70
