@@ -8,10 +8,6 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private List<GameObject> enemyList = new List<GameObject>();
     [SerializeField] private bool canSpawn = false;
     [SerializeField] private Vector2 timeRangeToSpawn = new Vector2(2f, 4f);
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -20,7 +16,6 @@ public class EnemySpawner : MonoBehaviour
         {
             canSpawn = false;
             Spawn();
-
         }
     }
 
