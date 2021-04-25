@@ -33,14 +33,44 @@ public class GameManager : MonoBehaviour
             else if(currentScene == "CutScene")
             {
                 SceneLoader.instance.LoadGameScene();
+                StartCoroutine(SetupGameScene());
             }
             else if(currentScene == "GameScene")
             {
                 if (!isAlive)
                 {
                     SceneLoader.instance.LoadMainMenu();
+                    SetupMainMenu();
                 }
             }
         }
+    }
+
+    private IEnumerator SetupGameScene()
+    {
+        yield return new WaitForSecondsRealtime(2f);
+
+        MapHandler mapHandler = FindObjectOfType<MapHandler>();
+        Mover mover = FindObjectOfType<Mover>();
+        if (mapHandler)
+        {
+            mapHandler.SetCanSpawn(true); 
+        }
+        if (mover)
+        {
+            mover.SetCanMove(true);
+        }
+        ScoreHandler.instance.StartCount();
+    }
+
+    private void SetupMainMenu()
+    {
+
+    }
+
+    private void GameOver()
+    {
+        isAlive = false;
+        ScoreHandler.instance.StopCount();
     }
 }

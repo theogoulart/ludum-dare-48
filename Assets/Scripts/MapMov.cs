@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class MapMov : MonoBehaviour
 {
-
     public float speed;
-
-    // Update is called once per frame
+    public bool canMove;
     void Update()
     {
+        if (!canMove) { return; }
         transform.position += Vector3.up * speed * Time.deltaTime;
-        
     }
 }

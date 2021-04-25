@@ -6,7 +6,7 @@ public class ScoreHandler : MonoBehaviour
 {
     public static ScoreHandler instance;
     private bool inGame = false;
-    private int currentPoints = 0;
+    [SerializeField] private int currentPoints = 0;
     [SerializeField] private float startTime = 0;
 
     private void Awake()
@@ -27,7 +27,8 @@ public class ScoreHandler : MonoBehaviour
     {
         if (inGame)
         {
-            currentPoints = (int)(Time.deltaTime - startTime);
+
+            currentPoints = (int)(Time.realtimeSinceStartup - startTime);
         }
     }
 
@@ -43,7 +44,7 @@ public class ScoreHandler : MonoBehaviour
 
     public void StartCount()
     {
-        startTime = Time.deltaTime;
+        startTime = Time.realtimeSinceStartup;
         inGame = true;
     }
 
@@ -51,5 +52,19 @@ public class ScoreHandler : MonoBehaviour
     {
         currentPoints = 0;
         inGame = false;
+    }
+
+    public int GetCurrentScore()
+    {
+        return currentPoints;
+    }
+
+    public void StopCount()
+    {
+        inGame = false;
+        if(GetCurrentRecord() < GetCurrentScore())
+        {
+            SaveRecord(GetCurrentScore());
+        }
     }
 }
