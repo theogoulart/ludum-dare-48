@@ -25,13 +25,13 @@ public class Mover : MonoBehaviour
         {
             float xPos = transform.position.x + speed * Time.deltaTime;
             transform.position = new Vector3(xPos, transform.position.y, transform.position.z);
-            rend.flipX = false;
+            rend.flipX = true;
         }
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             float xPos = transform.position.x - speed * Time.deltaTime;
             transform.position = new Vector3(xPos, transform.position.y, transform.position.z);
-            rend.flipX = true;
+            rend.flipX = false;
         }
         transform.position = new Vector3(Mathf.Clamp(transform.position.x
                                          , limits.x
