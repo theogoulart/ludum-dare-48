@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{00a3cc97-da0b-4dbd-a45a-b13bba9bdd81}">
+		<property name="name">
+			<value>impacto_lixoradioativo</value>
+		</property>
+		<relationship name="folder">
+			<destination>{0e19ace3-fdb4-4d50-af85-c46e8bfafdc9}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{9fa1e114-de62-4675-8692-0be2eea0d4e1}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{9fa1e114-de62-4675-8692-0be2eea0d4e1}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="minimum">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>3</value>
+		</property>
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+	</object>
+</objects>

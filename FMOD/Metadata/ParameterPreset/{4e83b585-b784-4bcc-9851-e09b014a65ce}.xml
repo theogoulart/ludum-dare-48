@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{4e83b585-b784-4bcc-9851-e09b014a65ce}">
+		<property name="name">
+			<value>movimento_impacto_tubarao</value>
+		</property>
+		<relationship name="folder">
+			<destination>{0e19ace3-fdb4-4d50-af85-c46e8bfafdc9}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{52277372-91cc-45b9-a850-eb11d76dc298}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{52277372-91cc-45b9-a850-eb11d76dc298}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="minimum">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>3</value>
+		</property>
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+	</object>
+</objects>
