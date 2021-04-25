@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Barrel : MonoBehaviour
+public class MoveVertical : MonoBehaviour
 {
     [SerializeField] private float speed = 3f;
     [SerializeField] private float timeToDestroy = 10f;
