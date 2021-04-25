@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6106262631996846803}
   - component: {fileID: -3697075621843050474}
   - component: {fileID: 4331100777921455879}
+  - component: {fileID: 5201073774267622952}
   m_Layer: 0
   m_Name: LanturnFish
   m_TagString: Enemy
@@ -34,6 +35,41 @@ Transform:
   m_Father: {fileID: 5157953854119221818}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-3697075621843050474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5201073774267622958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34bff4c5dae2639489ebc28cf4320280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 2
+  xSpeed: 2
+  ySpeed: 2
+  finalXPos: 0
+  initialXPos: 0
+  timeToDestroy: 15
+  facingRight: 1
+--- !u!58 &4331100777921455879
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5201073774267622958}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!114 &5201073774267622952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,9 +122,8 @@ GameObject:
   - component: {fileID: 5157953854119221818}
   - component: {fileID: 9013138380533723293}
   - component: {fileID: 3178609749186986103}
-  - component: {fileID: 5201073775486318621}
   m_Layer: 0
-  m_Name: LanturnFish 1
+  m_Name: LanturnFish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102,7 +137,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5312386910695216485}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.61, y: -2.07, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5201073774267622959}

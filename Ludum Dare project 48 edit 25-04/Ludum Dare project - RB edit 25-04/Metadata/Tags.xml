@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="MasterTagFolder" id="{d34b401d-54d7-4126-af88-2d4dcc0a5799}">
+		<property name="name">
+			<value>Master</value>
+		</property>
+		<relationship name="items">
+			<destination>{4deff9fe-3226-478f-b333-a2c2cb69b9a6}</destination>
+		</relationship>
+	</object>
+	<object class="Tag" id="{4deff9fe-3226-478f-b333-a2c2cb69b9a6}">
+		<property name="name">
+			<value>- No parâmetro de 0 a 0.99 tocará a stem de base do bloco 1 (tensão mínima)
+- No parâmetro de 1 a 1.99 tocará as stems do bloco 2 (tensão média)
+- No parâmetro de 2 a 2.99 tocará as stems do bloco 3 (tensão máxima)
+</value>
+		</property>
+	</object>
+</objects>

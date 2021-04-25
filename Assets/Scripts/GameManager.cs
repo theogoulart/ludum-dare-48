@@ -71,6 +71,7 @@ public class GameManager : MonoBehaviour
         {
             mover.SetCanMove(true);
         }
+        FindObjectOfType<EnemySpawner>()?.SetCanSpawn(true);
         ScoreHandler.instance.StartCount();
         inGame = true;
     }
