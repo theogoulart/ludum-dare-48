@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{b0e59b28-5f53-4259-bb44-12abf76a3877}">
 		<property name="assetPath">
-			<value>sfx_inimigo_tubarao.wav</value>
+			<value>sfx/sfx_inimigo_tubarao.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

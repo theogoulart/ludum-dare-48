@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{9d335371-04b2-4a08-bd9b-485e30ca22a9}">
 		<property name="assetPath">
-			<value>sfx_cutscene_pulandobarco.wav</value>
+			<value>sfx/sfx_cutscene_pulandobarco.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

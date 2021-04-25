@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{36a4661f-29a8-4960-8743-b2aeb08d2b64}">
 		<property name="assetPath">
-			<value>sfx_inimigo_lanterna.wav</value>
+			<value>sfx/sfx_inimigo_lanterna.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

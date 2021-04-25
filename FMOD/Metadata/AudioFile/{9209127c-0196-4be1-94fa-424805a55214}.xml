@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{9209127c-0196-4be1-94fa-424805a55214}">
 		<property name="assetPath">
-			<value>sfx_gameover.wav</value>
+			<value>sfx/sfx_gameover.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{72ff6fc2-8a27-4a81-a9ce-179cd4c1478c}">
 		<property name="assetPath">
-			<value>sfx_ui_contagempontuacao.wav</value>
+			<value>sfx/sfx_ui_contagempontuacao.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

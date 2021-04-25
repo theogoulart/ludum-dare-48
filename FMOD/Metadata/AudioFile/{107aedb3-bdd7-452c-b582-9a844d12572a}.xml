@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{107aedb3-bdd7-452c-b582-9a844d12572a}">
 		<property name="assetPath">
-			<value>sfx_inimigo_peixeespadaimpacto.wav</value>
+			<value>sfx/sfx_inimigo_peixeespadaimpacto.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

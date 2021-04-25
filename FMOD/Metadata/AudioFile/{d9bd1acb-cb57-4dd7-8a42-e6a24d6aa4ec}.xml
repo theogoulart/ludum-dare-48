@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{d9bd1acb-cb57-4dd7-8a42-e6a24d6aa4ec}">
 		<property name="assetPath">
-			<value>sfx_inimigo_lixoradioativo.wav</value>
+			<value>sfx/sfx_inimigo_lixoradioativo.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

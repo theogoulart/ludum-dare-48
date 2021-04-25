@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{e7474278-320f-4b80-b2f5-e1959c9f4b60}">
 		<property name="assetPath">
-			<value>sfx_countercorrect.wav</value>
+			<value>sfx/sfx_countercorrect.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

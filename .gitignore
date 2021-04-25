@@ -64,3 +64,6 @@ Library/ArtifactDB-lock
 Library/ArtifactDB-lock
 Library/ArtifactDB-lock
 Library/ArtifactDB
+
+# FMOD
+FMOD/.cache/

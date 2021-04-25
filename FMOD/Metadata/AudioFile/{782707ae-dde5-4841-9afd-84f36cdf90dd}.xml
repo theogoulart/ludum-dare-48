@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{782707ae-dde5-4841-9afd-84f36cdf90dd}">
 		<property name="assetPath">
-			<value>sfx_inimigo_lixoradioativo_impacto.wav</value>
+			<value>sfx/sfx_inimigo_lixoradioativo_impacto.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
