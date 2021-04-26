@@ -40,7 +40,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -7080388573825116204}
+  - {fileID: -5211609832641987443}
   MinDistance: 0
   MaxDistance: 0
   Length: 5000
@@ -156,6 +156,46 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 999
+--- !u!114 &-6643840753633827584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music_all/tension
+  m_EditorClassIdentifier: 
+  Name: tension
+  Min: 0
+  Max: 7
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-5211609832641987443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_ui_contagempontuacao/contagem
+  m_EditorClassIdentifier: 
+  Name: contagem
+  Min: 1
+  Max: 2
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-5177579899986569925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,7 +308,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -9144361356927772248}
+  - {fileID: -6643840753633827584}
   MinDistance: 0
   MaxDistance: 0
   Length: 155232
@@ -310,7 +350,7 @@ MonoBehaviour:
   Path: Ludum Dare project 48 edit 25-04/Ludum Dare project - RB edit 25-04/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637549685844851933
+  lastModified: 637549782136538758
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -401,7 +441,7 @@ MonoBehaviour:
   - {fileID: -2615086961594492291}
   StringsBanks:
   - {fileID: 3255195348563681682}
-  stringsBankWriteTime: 637549685844921749
+  stringsBankWriteTime: 637549782136688767
   cacheVersion: 6
 --- !u!114 &580055743800967910
 MonoBehaviour:
@@ -441,7 +481,7 @@ MonoBehaviour:
   Path: Ludum Dare project 48 edit 25-04/Ludum Dare project - RB edit 25-04/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637549685844921749
+  lastModified: 637549782136688767
   LoadResult: 0
   FileSizes:
   - Name: Desktop
