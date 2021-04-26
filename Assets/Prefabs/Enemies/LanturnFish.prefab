@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 4565140760324625710}
   m_Layer: 0
   m_Name: LanturnFish
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

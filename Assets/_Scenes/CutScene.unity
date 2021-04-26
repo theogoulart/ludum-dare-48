@@ -820,6 +820,7 @@ GameObject:
   - component: {fileID: 1972604244}
   - component: {fileID: 1972604243}
   - component: {fileID: 1972604242}
+  - component: {fileID: 1972604245}
   m_Layer: 5
   m_Name: TextBox
   m_TagString: Untagged
@@ -865,7 +866,6 @@ MonoBehaviour:
     I knew that we we''re doomed. I refuse to let things end this way. I promise
     you a last goodbye.  '
   currentText: 
-  typingSound: event:/sfx/sfx_ui_escrita
 --- !u!114 &1972604243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -963,3 +963,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1972604240}
   m_CullTransparentMesh: 1
+--- !u!114 &1972604245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972604240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/sfx/sfx_ui_escrita
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
