@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000017632B8B878 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001762DE1F598 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,55 +18,8 @@
 [LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 135)
-[LOG] SystemI::createSound                     : filename = FMOD/Build\Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 00000176973DF9E8 : node = 0000017630FE20A0
-[LOG] SystemI::createSound                     : add node to async list : head = 00000175E174C9B8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000176973DF9E8
-[LOG] SystemI::createSoundInternal             :     Create name='FMOD/Build\Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9475328
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29056
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017630FE21B0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='sfx_inimigo_lixoradioativo', format=5, channels=2, frequency=48000, lengthbytes=233120, lengthpcm=934846, pcmblocksize=0, loopstart=0, loopend=484845, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.417328.
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9475328
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29056
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000003D9E4FF2E8
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->useropen           = 00007FFF98BA7D70
-[LOG] SystemI::createSoundInternal             :     exinfo->userclose          = 00007FFF98BA7D40
-[LOG] SystemI::createSoundInternal             :     exinfo->userread           = 00007FFF98BA7E40
-[LOG] SystemI::createSoundInternal             :     exinfo->userseek           = 00007FFF98BA7F00
-[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 000001762DC56DD8
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            :     register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             :     Sample 0/1: name='sfx_inimigo_lixoradioativo_impacto', format=5, channels=2, frequency=48000, lengthbytes=27072, lengthpcm=117923, pcmblocksize=0, loopstart=0, loopend=50999, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.975128.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000176973DF9E8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000176973E0408
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000176973E0408
-[LOG] SoundI::release                          : sfx_inimigo_lixoradioativo (00000176973DF9E8)
-[LOG] SoundI::release                          :     sfx_inimigo_lixoradioativo (000001762FD0A268)
-[LOG] SoundI::release                          :     sfx_inimigo_lixoradioativo (00000176973E0408)
-[LOG] SoundI::release                          : sfx_ambiencia (00000176BA39B6B8)
-[LOG] SoundI::release                          :     sfx_ambiencia (000001762FD09BE8)
-[LOG] SoundI::release                          :     sfx_ambiencia (00000176BA39CCA8)
-[LOG] SoundI::release                          : sfx_inimigo_peixelanterna (00000176BA39E448)
-[LOG] SoundI::release                          :     sfx_inimigo_peixelanterna (000001762FD09228)
-[LOG] SoundI::release                          :     sfx_inimigo_peixelanterna (00000176BA3959E8)
-[LOG] SoundI::release                          :  (00000175E1763038)
-[LOG] SoundI::release                          :     sfx_inimigo_movimentoeimpacto_lanterna (000001762FD09D88)
-[LOG] SoundI::release                          :  (00000176BA57E248)
-[LOG] SoundI::release                          :     sfx_inimigo_lixoradioativo_impacto (000001762FD0CB08)
-[LOG] SoundI::release                          :  (00000176DC1E5388)
-[LOG] SoundI::release                          :     sfx_personagem_movimento (000001762FD09A48)
+[LOG] SoundI::release                          :  (00000176DC1E5948)
+[LOG] SoundI::release                          :     sfx_ui_escrita (00000175E28051E8)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients

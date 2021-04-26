@@ -865,6 +865,7 @@ MonoBehaviour:
     I knew that we we''re doomed. I refuse to let things end this way. I promise
     you a last goodbye.  '
   currentText: 
+  typingSound: event:/sfx/sfx_ui_escrita
 --- !u!114 &1972604243
 MonoBehaviour:
   m_ObjectHideFlags: 0
