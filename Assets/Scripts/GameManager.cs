@@ -86,8 +86,6 @@ public class GameManager : MonoBehaviour
         isAlive = false;
         inGame = false;
         ScoreHandler.instance.StopCount();
-
-
         SceneLoader.instance.LoadMainMenu();
     }
 }

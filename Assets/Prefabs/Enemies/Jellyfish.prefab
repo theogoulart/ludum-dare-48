@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4346334767125395198}
   - component: {fileID: 1040526463421525109}
   - component: {fileID: 7551446441563003280}
+  - component: {fileID: 4329278002254815364}
   m_Layer: 0
   m_Name: Jellyfish
   m_TagString: Enemy
@@ -61,9 +62,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.1}
   serializedVersion: 2
-  m_Radius: 0.46875
+  m_Radius: 0.35
 --- !u!212 &1040526463421525109
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -134,3 +135,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4329278002254815364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5878523900326548498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0979446e904f57b4f90d572c4b6f1b39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectsound: event:/sfx/sfx_inimigo_aguavivaimpacto

@@ -536,9 +536,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Ludum Dare project 48 edit 25-04/Ludum Dare project - RB edit
-    25-04/Ludum Dare project - RB edit 25-04.fspro
-  sourceBankPath: Ludum Dare project 48 edit 25-04/Ludum Dare project - RB edit 25-04/Build
+  sourceProjectPath: FMOD/Ludum Dare project - RB edit 25-04.fspro
+  sourceBankPath: FMOD/Build
   SourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1

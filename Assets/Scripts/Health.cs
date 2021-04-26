@@ -35,6 +35,7 @@ public class Health : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
+            other.GetComponent<Impact>().PlayImpactSound();
             ReduceLife();
         }
     }

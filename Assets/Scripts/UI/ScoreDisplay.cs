@@ -11,6 +11,8 @@ public class ScoreDisplay : MonoBehaviour
     
     void Update()
     {
-        score.text = (ScoreHandler.instance.GetCurrentScore()).ToString();
+        if (ScoreHandler.instance) {
+            score.text = (ScoreHandler.instance.GetCurrentScore()).ToString();
+        }
     }
 }

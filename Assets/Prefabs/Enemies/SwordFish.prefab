@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 57377621600788344}
   - component: {fileID: -1821586316501140304}
   - component: {fileID: -8968519709049121625}
+  - component: {fileID: 8172857408632769591}
   m_Layer: 0
   m_Name: SwordFish
   m_TagString: Enemy
@@ -139,3 +140,16 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.96875
+--- !u!114 &8172857408632769591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766044339141483824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0979446e904f57b4f90d572c4b6f1b39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectsound: event:/sfx/sfx_inimigo_peixeespadaimpacto

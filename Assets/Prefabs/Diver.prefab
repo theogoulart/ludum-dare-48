@@ -102,6 +102,7 @@ MonoBehaviour:
   canMove: 0
   limits: {x: -2.15, y: 2.15}
   speed: 2
+  movementSound: event:/sfx/sfx_personagem_movimento
 --- !u!114 &5813825457571951941
 MonoBehaviour:
   m_ObjectHideFlags: 0

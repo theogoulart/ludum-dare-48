@@ -9,6 +9,16 @@ public class Mover : MonoBehaviour
     [SerializeField] private float speed = 2f;
     private SpriteRenderer rend;
 
+    // FMOD sfx
+    [FMODUnity.EventRef]
+    public string movementSound;
+    public FMOD.Studio.EventInstance soundEvent;
+
+    private void Start()
+    {
+        soundEvent = FMODUnity.RuntimeManager.CreateInstance(movementSound);
+    }
+
     private void Awake() => rend = GetComponent<SpriteRenderer>();
 
     void Update()
@@ -25,12 +35,19 @@ public class Mover : MonoBehaviour
         {
             float xPos = transform.position.x + speed * Time.deltaTime;
             transform.position = new Vector3(xPos, transform.position.y, transform.position.z);
+
+            if (!rend.flipX) {
+                PlayMovementSound();
+            }
             rend.flipX = true;
         }
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             float xPos = transform.position.x - speed * Time.deltaTime;
             transform.position = new Vector3(xPos, transform.position.y, transform.position.z);
+            if (rend.flipX) {
+                PlayMovementSound();
+            }
             rend.flipX = false;
         }
         transform.position = new Vector3(Mathf.Clamp(transform.position.x
@@ -43,5 +60,16 @@ public class Mover : MonoBehaviour
     public void SetCanMove(bool value)
     {
         canMove = value;
+    }
+
+    private void PlayMovementSound()
+    {
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(soundEvent, GetComponent<Transform>(), GetComponent<Rigidbody>());
+        FMOD.Studio.PLAYBACK_STATE fmodPbState;
+        soundEvent.getPlaybackState(out fmodPbState);
+        if (fmodPbState != FMOD.Studio.PLAYBACK_STATE.PLAYING) 
+        {
+            soundEvent.start();
+        }
     }
 }

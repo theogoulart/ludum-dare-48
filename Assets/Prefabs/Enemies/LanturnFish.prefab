@@ -8,11 +8,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4554764889669347486}
-  - component: {fileID: 411064109819052601}
-  - component: {fileID: 6106262631996846803}
-  - component: {fileID: -3697075621843050474}
-  - component: {fileID: 4331100777921455879}
+  - component: {fileID: 5201073774267622959}
   - component: {fileID: 5201073774267622952}
   m_Layer: 0
   m_Name: LanturnFish
@@ -35,41 +31,6 @@ Transform:
   m_Father: {fileID: 5157953854119221818}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-3697075621843050474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5201073774267622958}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34bff4c5dae2639489ebc28cf4320280, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  range: 2
-  xSpeed: 2
-  ySpeed: 2
-  finalXPos: 0
-  initialXPos: 0
-  timeToDestroy: 15
-  facingRight: 1
---- !u!58 &4331100777921455879
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5201073774267622958}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!114 &5201073774267622952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,6 +83,10 @@ GameObject:
   - component: {fileID: 5157953854119221818}
   - component: {fileID: 9013138380533723293}
   - component: {fileID: 3178609749186986103}
+  - component: {fileID: -312501745428292224}
+  - component: {fileID: 4666834844550016291}
+  - component: {fileID: 1625166517519081985}
+  - component: {fileID: 4565140760324625710}
   m_Layer: 0
   m_Name: LanturnFish
   m_TagString: Untagged
@@ -214,13 +179,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-3697075621843050474
+--- !u!58 &-312501745428292224
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5312386910695216485}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.23, y: 0.06}
+  serializedVersion: 2
+  m_Radius: 0.4
+--- !u!114 &4666834844550016291
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3537611063877429185}
+  m_GameObject: {fileID: 5312386910695216485}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34bff4c5dae2639489ebc28cf4320280, type: 3}
@@ -233,19 +214,39 @@ MonoBehaviour:
   initialXPos: 0
   timeToDestroy: 15
   facingRight: 1
---- !u!58 &4331100777921455879
-CircleCollider2D:
+--- !u!114 &1625166517519081985
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3537611063877429185}
+  m_GameObject: {fileID: 5312386910695216485}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0979446e904f57b4f90d572c4b6f1b39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectsound: event:/sfx/sfx_inimigo_peixelanterna_impacto
+--- !u!114 &4565140760324625710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5312386910695216485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/sfx/sfx_inimigo_lanterna
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
