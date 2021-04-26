@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{d422ea47-357f-4929-bd85-0b0a4a8edbb6}">
+		<property name="assetPath">
+			<value>sfx_inimigo_lixoradioativo.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>19.475958333333335</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{57e360c1-91e9-4342-80bf-ec1474b95eb0}</destination>
+		</relationship>
+	</object>
+</objects>
