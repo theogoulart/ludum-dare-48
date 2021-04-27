@@ -859,7 +859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95b33e2076124ec45a8ff2dbd513c696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayBetweenLetters: 0.07
+  delayBetweenLetters: 0.062
   textToShow:
   - 'It all happened very fast. It was supposed to be a happy trip, our honeymoon
     rocked by the sea waves... but the moment I saw the storm forming on the horizon

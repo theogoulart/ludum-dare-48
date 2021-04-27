@@ -13,13 +13,6 @@ public class Health : MonoBehaviour
         currentHealth = maxHealth;
         livesDisplay.UpdateDisplay(currentHealth);
     }
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            ReduceLife();
-        }
-    }
 
     private void ReduceLife()
     {

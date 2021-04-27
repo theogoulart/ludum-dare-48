@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
 
     private void CheckInputs()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             string currentScene = SceneLoader.instance.GetCurrentScene();
             if (currentScene == "MainMenu")
@@ -61,6 +61,7 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(2f);
 
+        isAlive = true;
         MapHandler mapHandler = FindObjectOfType<MapHandler>();
         Mover mover = FindObjectOfType<Mover>();
         if (mapHandler)
